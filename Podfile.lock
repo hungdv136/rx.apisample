@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (4.0.1)
+  - PureLayout (3.0.2)
+  - RxCocoa (3.0.0-beta.2):
+    - RxSwift (~> 3.0.0-beta.2)
+  - RxSwift (3.0.0-beta.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - PureLayout
+  - RxCocoa (= 3.0.0-beta.2)
+  - RxSwift (= 3.0.0-beta.2)
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  RxCocoa: 1dd105d8a4e18034ccd7bd6d136445363ce67c8e
+  RxSwift: 0ea939d7d97cb70657190ffde8dc2a9b455778fc
+
+PODFILE CHECKSUM: 405f12d478256faf0ecf83b37469467e39e6b4f6
+
+COCOAPODS: 1.0.1

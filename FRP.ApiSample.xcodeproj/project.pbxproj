@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9F123ED81D7D21ACD80572F /* Pods_FRP_ApiSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE3F2DC0E70554FF7386194 /* Pods_FRP_ApiSample.framework */; };
+		E910919E1DA9CA3C00567285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910919D1DA9CA3C00567285 /* AppDelegate.swift */; };
+		E91091A01DA9CA3C00567285 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910919F1DA9CA3C00567285 /* PostViewController.swift */; };
+		E9301A731DABCD0C00DA2299 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9301A721DABCD0C00DA2299 /* Post.swift */; };
+		E9301A751DABD7CC00DA2299 /* BaseAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9301A741DABD7CC00DA2299 /* BaseAPIService.swift */; };
+		E9522A0C1DB1EAAE008204AC /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9522A0B1DB1EAAE008204AC /* JSONDecodable.swift */; };
+		E9522A0E1DB203F1008204AC /* Schedulers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9522A0D1DB203F1008204AC /* Schedulers.swift */; };
+		E99DBE4F1DA9DB9800BF637A /* PostAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99DBE4E1DA9DB9800BF637A /* PostAPIService.swift */; };
+		E99DBE511DA9DE5A00BF637A /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99DBE501DA9DE5A00BF637A /* PostViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9951AEB8E58E7476B8B72960 /* Pods-FRP.ApiSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRP.ApiSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRP.ApiSample/Pods-FRP.ApiSample.release.xcconfig"; sourceTree = "<group>"; };
+		A1757DA1148B894549BB8628 /* Pods-FRP.ApiSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRP.ApiSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRP.ApiSample/Pods-FRP.ApiSample.debug.xcconfig"; sourceTree = "<group>"; };
+		E910919A1DA9CA3C00567285 /* FRP.ApiSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRP.ApiSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E910919D1DA9CA3C00567285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E910919F1DA9CA3C00567285 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		E91091A91DA9CA3C00567285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9301A721DABCD0C00DA2299 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E9301A741DABD7CC00DA2299 /* BaseAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPIService.swift; sourceTree = "<group>"; };
+		E9522A0B1DB1EAAE008204AC /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
+		E9522A0D1DB203F1008204AC /* Schedulers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedulers.swift; sourceTree = "<group>"; };
+		E99DBE4E1DA9DB9800BF637A /* PostAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostAPIService.swift; sourceTree = "<group>"; };
+		E99DBE501DA9DE5A00BF637A /* PostViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		FBE3F2DC0E70554FF7386194 /* Pods_FRP_ApiSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRP_ApiSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E91091971DA9CA3B00567285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F123ED81D7D21ACD80572F /* Pods_FRP_ApiSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5DFA335A68834966C32454F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBE3F2DC0E70554FF7386194 /* Pods_FRP_ApiSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E91091911DA9CA3B00567285 = {
+			isa = PBXGroup;
+			children = (
+				E910919C1DA9CA3C00567285 /* FRP.ApiSample */,
+				E910919B1DA9CA3C00567285 /* Products */,
+				F16335804BE8A64A5D62362D /* Pods */,
+				C5DFA335A68834966C32454F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E910919B1DA9CA3C00567285 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E910919A1DA9CA3C00567285 /* FRP.ApiSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E910919C1DA9CA3C00567285 /* FRP.ApiSample */ = {
+			isa = PBXGroup;
+			children = (
+				E910919D1DA9CA3C00567285 /* AppDelegate.swift */,
+				E9522A0A1DB1EA6F008204AC /* CoreTypes */,
+				E99DBE521DA9DE6200BF637A /* Models */,
+				E99DBE551DA9DE9200BF637A /* Views */,
+				E99DBE531DA9DE6900BF637A /* ViewModels */,
+				E99DBE541DA9DE7100BF637A /* Services */,
+				E91091A91DA9CA3C00567285 /* Info.plist */,
+			);
+			path = FRP.ApiSample;
+			sourceTree = "<group>";
+		};
+		E9522A0A1DB1EA6F008204AC /* CoreTypes */ = {
+			isa = PBXGroup;
+			children = (
+				E9301A741DABD7CC00DA2299 /* BaseAPIService.swift */,
+				E9522A0B1DB1EAAE008204AC /* JSONDecodable.swift */,
+				E9522A0D1DB203F1008204AC /* Schedulers.swift */,
+			);
+			name = CoreTypes;
+			sourceTree = "<group>";
+		};
+		E99DBE521DA9DE6200BF637A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9301A721DABCD0C00DA2299 /* Post.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E99DBE531DA9DE6900BF637A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E99DBE501DA9DE5A00BF637A /* PostViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		E99DBE541DA9DE7100BF637A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E99DBE4E1DA9DB9800BF637A /* PostAPIService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		E99DBE551DA9DE9200BF637A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E910919F1DA9CA3C00567285 /* PostViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F16335804BE8A64A5D62362D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1757DA1148B894549BB8628 /* Pods-FRP.ApiSample.debug.xcconfig */,
+				9951AEB8E58E7476B8B72960 /* Pods-FRP.ApiSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E91091991DA9CA3B00567285 /* FRP.ApiSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E91091AC1DA9CA3C00567285 /* Build configuration list for PBXNativeTarget "FRP.ApiSample" */;
+			buildPhases = (
+				5CC542ED950B320FC5EF2A06 /* [CP] Check Pods Manifest.lock */,
+				E91091961DA9CA3B00567285 /* Sources */,
+				E91091971DA9CA3B00567285 /* Frameworks */,
+				E91091981DA9CA3B00567285 /* Resources */,
+				50E9A7C326CF73B21B922073 /* [CP] Embed Pods Frameworks */,
+				AED59D2CC79C2BEFEFA7DA38 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FRP.ApiSample;
+			productName = FRP.ApiSample;
+			productReference = E910919A1DA9CA3C00567285 /* FRP.ApiSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E91091921DA9CA3B00567285 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Chu Cuoi";
+				TargetAttributes = {
+					E91091991DA9CA3B00567285 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E91091951DA9CA3B00567285 /* Build configuration list for PBXProject "FRP.ApiSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E91091911DA9CA3B00567285;
+			productRefGroup = E910919B1DA9CA3C00567285 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E91091991DA9CA3B00567285 /* FRP.ApiSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E91091981DA9CA3B00567285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50E9A7C326CF73B21B922073 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRP.ApiSample/Pods-FRP.ApiSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CC542ED950B320FC5EF2A06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AED59D2CC79C2BEFEFA7DA38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRP.ApiSample/Pods-FRP.ApiSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E91091961DA9CA3B00567285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91091A01DA9CA3C00567285 /* PostViewController.swift in Sources */,
+				E99DBE4F1DA9DB9800BF637A /* PostAPIService.swift in Sources */,
+				E9522A0C1DB1EAAE008204AC /* JSONDecodable.swift in Sources */,
+				E99DBE511DA9DE5A00BF637A /* PostViewModel.swift in Sources */,
+				E910919E1DA9CA3C00567285 /* AppDelegate.swift in Sources */,
+				E9522A0E1DB203F1008204AC /* Schedulers.swift in Sources */,
+				E9301A731DABCD0C00DA2299 /* Post.swift in Sources */,
+				E9301A751DABD7CC00DA2299 /* BaseAPIService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E91091AA1DA9CA3C00567285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E91091AB1DA9CA3C00567285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E91091AD1DA9CA3C00567285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1757DA1148B894549BB8628 /* Pods-FRP.ApiSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FRP.ApiSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ChuCuoi.FRP-ApiSample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E91091AE1DA9CA3C00567285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9951AEB8E58E7476B8B72960 /* Pods-FRP.ApiSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FRP.ApiSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ChuCuoi.FRP-ApiSample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E91091951DA9CA3B00567285 /* Build configuration list for PBXProject "FRP.ApiSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91091AA1DA9CA3C00567285 /* Debug */,
+				E91091AB1DA9CA3C00567285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E91091AC1DA9CA3C00567285 /* Build configuration list for PBXNativeTarget "FRP.ApiSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91091AD1DA9CA3C00567285 /* Debug */,
+				E91091AE1DA9CA3C00567285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E91091921DA9CA3B00567285 /* Project object */;
+}
