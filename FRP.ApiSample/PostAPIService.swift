@@ -13,7 +13,7 @@ final class PostAPIService: BaseAPIService {
     func getPosts(searchText: String) -> Observable<[Post]> {
         let lowerSearchText = searchText.lowercased()
         return rx_requestArray(url: "https://jsonplaceholder.typicode.com/posts").map {
-            $0.filter { searchText.isEmpty || $0.title.contains(lowerSearchText) }
+            searchText.isEmpty ? $0 : $0.filter { $0.title.contains(lowerSearchText) }
         }
     }
     
