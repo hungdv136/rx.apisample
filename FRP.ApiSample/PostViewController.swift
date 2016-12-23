@@ -26,8 +26,9 @@ final class PostViewController: UITableViewController {
         tableView.tableHeaderView = seachBar
         
         seachBar.rx.text
-            .throttle(0.25, scheduler: Schedulers.backgroundDefault)
-            .flatMap { [weak self] text -> Observable<[Post]> in
+            .throttle(0.25, scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .flatMapLatest { [weak self] text -> Observable<[Post]> in
                 return self?.viewModel.getPosts(searchText: text) ?? Observable.just([])
             }
             .catchErrorJustReturn([])
