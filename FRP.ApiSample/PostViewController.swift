@@ -29,9 +29,8 @@ final class PostViewController: UITableViewController {
             .throttle(0.25, scheduler: MainScheduler.instance)
             .distinctUntilChanged()
             .flatMapLatest { [weak self] text -> Observable<[Post]> in
-                return self?.viewModel.getPosts(searchText: text) ?? Observable.just([])
+                return self?.viewModel.getPosts(searchText: text).catchErrorJustReturn([]) ?? Observable.just([])
             }
-            .catchErrorJustReturn([])
             .bindTo(tableView.rx.items(cellIdentifier: "TableCell", cellType: UITableViewCell.self)) { (row, post, cell) in
                 cell.textLabel?.text = "\(post.title)\n\(post.body)"
             }
